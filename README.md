@@ -1,0 +1,1 @@
+# nextjs-mintegr-mf
