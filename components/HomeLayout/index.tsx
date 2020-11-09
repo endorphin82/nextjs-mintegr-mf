@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Footer } from "../Footer"
 
 import { HomeHeader } from "../HomeHeader"
+import { MobileNavigation } from "../Navigation/MobileNavigation"
 
 export function HomeLayout({ children }) {
 
@@ -14,7 +15,7 @@ export function HomeLayout({ children }) {
         <meta charSet="utf-8" />
       </Head>
 
-        <HomeHeader />
+      <HomeHeader />
 
       <main className="main">
         <div className="container">

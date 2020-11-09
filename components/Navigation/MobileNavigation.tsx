@@ -158,13 +158,6 @@ export function MobileNavigation() {
 
     <nav className={isShowMenu ? "menu-active" : ""}>
 
-      <div className="header__logo">
-        <Link href={"/"}>
-          <a>
-            <img src="/assets/imgs/header-logo.png" alt="Full Cycle Digital Agency" />
-          </a>
-        </Link>
-      </div>
 
       <NavBar
         // leftContent={}
