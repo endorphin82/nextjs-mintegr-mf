@@ -8,10 +8,15 @@ export function Header() {
   }) : true
 
   return (
+
     <div className="darker-effect">
       <div className="header">
-        {isTabletOrMobileDevice ? <MobileNavigation /> : <div className="container"><Navigation /></div>}
+        <div className="container">
+        {isTabletOrMobileDevice ? <MobileNavigation />
+
+        : <Navigation />}
       </div>
+    </div>
     </div>
   )
 }

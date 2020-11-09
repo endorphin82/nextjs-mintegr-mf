@@ -14,7 +14,7 @@ export function HomeLayout({ children }) {
         <meta charSet="utf-8" />
       </Head>
 
-      <HomeHeader />
+        <HomeHeader />
 
       <main className="main">
         <div className="container">

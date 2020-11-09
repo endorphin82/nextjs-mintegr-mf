@@ -6,11 +6,13 @@ export function HomeHeader() {
   const isTabletOrMobileDevice = (typeof window !== "undefined") ? useMediaQuery({
     query: "(max-device-width: 768px)"
   }) : true
-  console.log(isTabletOrMobileDevice)
+
   return (
     <div className="darker-effect">
       <div className="header">
-        {isTabletOrMobileDevice ? <MobileNavigation /> : <div className="container"><HomeNavigation /></div>}
+        <div className="container">
+          {isTabletOrMobileDevice ? <MobileNavigation /> : <HomeNavigation />}
+        </div>
       </div>
     </div>
   )

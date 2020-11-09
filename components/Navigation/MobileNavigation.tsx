@@ -3,6 +3,7 @@ import { useSetIsShowMenu } from "../../redux/hooks"
 import { Menu, ActivityIndicator, NavBar } from "antd-mobile"
 import { useState } from "react"
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 const data = [
   {
@@ -155,25 +156,30 @@ export function MobileNavigation() {
   )
   return (
 
-    <div className={isShowMenu ? "menu-active" : ""}>
-      <div>
-        <NavBar
-          // leftContent={}
-          rightContent={<a><img onClick={handleClick} src="/assets/imgs/menu.svg"
-                                className="am-icon am-icon-md" alt="" /></a>}
-          mode="light"
-          // icon={<img src="/assets/imgs/menu.svg"
-          //            className="am-icon am-icon-md" alt=""/>}
-          onLeftClick={handleClick}
-          className="top-nav-bar"
-        >
-          M-INTEGRATION
-        </NavBar>
-        {isShowMenu ? initData ? menuEl : loadingEl : null}
-        {isShowMenu ? <div className="menu-mask" onClick={onMaskClick} /> : null}
+    <nav className={isShowMenu ? "menu-active" : ""}>
 
+      <div className="header__logo">
+        <Link href={"/"}>
+          <a>
+            <img src="/assets/imgs/header-logo.png" alt="Full Cycle Digital Agency" />
+          </a>
+        </Link>
       </div>
-    </div>
+
+      <NavBar
+        // leftContent={}
+        rightContent={<a><img onClick={handleClick} src="/assets/imgs/menu.svg"
+                              className="am-icon am-icon-md" alt="" /></a>}
+        mode="light"
+        // icon={<img src="/assets/imgs/menu.svg"
+        //            className="am-icon am-icon-md" alt=""/>}
+        onLeftClick={handleClick}
+        className="top-nav-bar"
+      >
+        M-INTEGRATION
+      </NavBar>
+      {isShowMenu ? initData ? menuEl : loadingEl : null}
+      {isShowMenu ? <div className="menu-mask" onClick={onMaskClick} /> : null}
+    </nav>
   )
 }
-
