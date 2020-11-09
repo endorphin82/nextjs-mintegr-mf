@@ -1,0 +1,16 @@
+@import 'null';
+@import 'fonts';
+@import 'colors';
+
+@import "./fontawesome-free-5.15.1-web/scss/fontawesome.scss";
+@import "./fontawesome-free-5.15.1-web/scss/solid.scss";
+
+body {
+  background-color: $bc01;
+  color: $tc02;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
