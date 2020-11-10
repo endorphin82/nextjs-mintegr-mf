@@ -1,7 +1,7 @@
 import { Card, Avatar } from "antd"
 import { Navigation } from "./Navigation"
 import Slider from "react-slick"
-import { useState, useRef } from "react"
+import { useState } from "react"
 
 function HomeNavigation() {
   const [nav1, setNav1] = useState()
