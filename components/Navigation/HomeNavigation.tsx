@@ -3,7 +3,7 @@ import { Navigation } from "./Navigation"
 import Slider from "react-slick"
 import { useState, useRef } from "react"
 
-export function HomeNavigation() {
+function HomeNavigation() {
   const [nav1, setNav1] = useState()
   const [nav2, setNav2] = useState()
 
@@ -88,7 +88,14 @@ export function HomeNavigation() {
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
 
           <Card
-
+            // style={{              boxSizing: "border-box",
+            //   backgroundColor: "transparent",
+            //   border: "1px solid rgba(0, 0, 0, 0)",
+            //   flex: "1 1 auto",
+            //   margin: "5px",
+            //   display: "flex",
+            //   flexDirection: "column",
+            //   justifyContent: "space-around" }}
             title={<Avatar size={64} src="/assets/imgs/homeheader/support3.png" />}
             hoverable
           >
@@ -122,3 +129,5 @@ export function HomeNavigation() {
     </>
   )
 }
+
+export default HomeNavigation

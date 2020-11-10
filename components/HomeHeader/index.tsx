@@ -1,12 +1,17 @@
-import { HomeNavigation } from "../Navigation/HomeNavigation"
+import dynamic from "next/dynamic"
+import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 import { MobileNavigation } from "../Navigation/MobileNavigation"
-import Link from "next/link"
 
-export function HomeHeader() {
-  const isTabletOrMobileDevice = (typeof window !== "undefined") ? useMediaQuery({
+const HomeNavigationDynamicComponentWithNoSSR = dynamic(
+  () => import ("../Navigation/HomeNavigation"),
+  { ssr: false }
+)
+
+function HomeHeader() {
+  const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 768px)"
-  }) : true
+  })
 
   return (
     <>
@@ -24,10 +29,12 @@ export function HomeHeader() {
                 </Link>
               </div>
               :
-              <HomeNavigation />}
+              <HomeNavigationDynamicComponentWithNoSSR />}
           </div>
         </div>
       </div>
     </>
   )
 }
+
+export default HomeHeader

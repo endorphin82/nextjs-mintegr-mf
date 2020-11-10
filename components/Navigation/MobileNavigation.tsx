@@ -115,7 +115,7 @@ export function MobileNavigation() {
   }
 
   const handleClick = (e) => {
-    e.preventDefault() // Fix event propagation on Android
+    // e.preventDefault() // Fix event propagation on Android
     setIsShowMenu(!isShowMenu)
 
     // mock for async data loading

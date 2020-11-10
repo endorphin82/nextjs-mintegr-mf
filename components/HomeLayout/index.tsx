@@ -1,9 +1,11 @@
 import Head from "next/head"
 import { Footer } from "../Footer"
+import dynamic from "next/dynamic"
 
-import { HomeHeader } from "../HomeHeader"
-import { MobileNavigation } from "../Navigation/MobileNavigation"
-
+const HomeHeaderDynamicComponentWithNoSSR = dynamic(
+  () => import ("../HomeHeader"),
+  { ssr: false }
+)
 export function HomeLayout({ children }) {
 
   return (
@@ -15,7 +17,7 @@ export function HomeLayout({ children }) {
         <meta charSet="utf-8" />
       </Head>
 
-      <HomeHeader />
+      <HomeHeaderDynamicComponentWithNoSSR />
 
       <main className="main">
         <div className="container">
