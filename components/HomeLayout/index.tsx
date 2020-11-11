@@ -6,6 +6,7 @@ const HomeHeaderDynamicComponentWithNoSSR = dynamic(
   () => import ("../HomeHeader"),
   { ssr: false }
 )
+
 export function HomeLayout({ children }) {
 
   return (
@@ -21,7 +22,7 @@ export function HomeLayout({ children }) {
 
       <main className="main">
         {/*<div className="container">*/}
-          {children}
+        {children}
         {/*</div>*/}
       </main>
 

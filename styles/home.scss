@@ -4,41 +4,46 @@
   align-items: center;
   //min-height: 50px;
   width: 100%;
-  padding: 0;
+  padding: 13px 0;
   margin-top: 43px;
   background-color: $bc08;
   font-family: $fontTrebuchet;
   font-size: 13px;
-  line-height: 18px;
+  //line-height: 18px;
   color: $tc02;
   font-weight: normal;
   @media (min-width: $md3+px) {
     margin-top: 0;
   }
+
   .content_plane {
+    display: inline-flex;
     position: relative;
     background: $bc08;
-    padding-top: 12px;
+    padding: 0;
     letter-spacing: 1px;
     color: $tc01;
     text-align: center;
-    font: 300 18px/22px 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: $fontfamilyOpenSans-serif;
     @media (min-width: $md3+px) {
       position: relative;
-      background: #82a3c9 !important;
-      padding: 12px 0 13px;
+      background-color: $bc08;
       letter-spacing: 1px;
-      font: 300 24px/28px 'Open Sans', sans-serif;
-      color: #fff;
+      font-weight: 300;
+      font-size: 24px;
+      font-family: $fontfamilyOpenSans-serif;
+      color: $tc01;
       text-align: center;
     }
   }
 
   .btn-inline {
+    display: inline-flex;
     letter-spacing: 1px;
     text-decoration: none;
     transition: all 0.3s ease;
-    display: inline-block;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -47,12 +52,14 @@
     box-shadow: none;
     padding: 0 20px 0;
     height: 34px;
-    font: 14px/34px 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 34px;
+    font-family: $fontfamilyOpenSans-serif;
     text-shadow: none;
     text-transform: lowercase;
     color: $tc01;
     border: 1px solid $tc01;
-    background: $bc08 ;
+    background: $bc08;
     margin-bottom: 2px;
     @media (min-width: $md3+px) {
       letter-spacing: 1px;
@@ -67,14 +74,15 @@
       box-shadow: none;
       padding: 0 20px 0;
       height: 34px;
-      font: 14px/34px 'Open Sans', sans-serif;
+      font-family: $fontfamilyOpenSans-serif;
       text-shadow: none;
       text-transform: lowercase;
-      color: #fff !important;
-      border: 1px solid #fff !important;
-      background: #82a3c9 !important;
+      color: $tc01;
+      border: 1px solid $bc01;
+      background: $tc05;
       margin-bottom: 2px;
     }
+
     &:hover {
       letter-spacing: 1px;
       display: inline-block;
@@ -84,23 +92,16 @@
       border-radius: 0px;
       padding: 0 20px 0;
       height: 34px;
-      font: 14px/34px 'Open Sans', sans-serif;
       text-shadow: none;
       text-transform: lowercase;
       outline: 0;
       text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: none;
-      color: #82a3c9 !important;
-      border: 1px solid #fff !important;
-      background: #fff !important;
+      color: $tc05;
+      border: 1px solid $tc01;
+      background: $bc01;
       margin-bottom: 2px;
-      transition: all 0.3s ease;
-      @media (min-width: $md3+px) {
-
-      }
     }
   }
-
-  //margin-left: 0;
 }
