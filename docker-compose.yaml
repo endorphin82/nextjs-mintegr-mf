@@ -1,8 +1,8 @@
 version: "3.3"
 
 services:
-  web_mintegr:
-    container_name: web_mintegr
+  web_mintegr-mf:
+    container_name: web_mintegr-mf
 #    build:
 #      context: .
 #      dockerfile: ./Dockerfile
