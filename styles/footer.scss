@@ -106,6 +106,9 @@
     padding-right: 15px;
     padding-top: 60px;
     @media (min-width: $md4+px) {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
       //  TODO: flex justify-content
     }
   }
@@ -150,7 +153,9 @@
       margin-left: -57px;
     }
     @media (min-width: $md4+px) {
-      order: 2;
+      order: 3;
+      //top: 8px;
+      //right: 15px;
     }
 
     li > a {
