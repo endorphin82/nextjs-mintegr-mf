@@ -15,9 +15,7 @@ export default function Home() {
           <h3 className="home__service-title">need our services?</h3>
         </div>
         <div className="home__cards">
-
           <div className="home__card-list">
-
             <figure className="home__card">
               <img src="/assets/imgs/home/hp-1.png" alt="Contact us" />
               <figcaption className="home__card-text-list">
