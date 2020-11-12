@@ -2,27 +2,47 @@
   //padding-top: 20px;
   &__container {
     position: relative;
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: $md4+px) {
+      width: 744px;
+    }
   }
 
   &__m-general-extension-partner {
     position: absolute;
-    bottom: -60px;
+    bottom: -45px;
+    left: 15px;
+    @media (min-width: $md3+px) {
+      position: fixed;
+      bottom: 20px;
+      left: 25px;
+    }
 
     a {
       img {
         width: 120px;
+        @media (min-width: $md11+px) {
+          width: 140px;
+        }
+        @media (min-width: $md3+px) {
+          width: 200px;
+        }
       }
     }
   }
 
   &__partner {
     background-color: $bc08;
-    //border: 3px solid red;
   }
 
   &__row {
     display: flex;
-    //justify-content: center;
     flex-basis: 100%;
   }
 
@@ -30,27 +50,24 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 15px;
 
     img {
       box-sizing: border-box;
       width: 30%;
-
+      @media (min-width: $md3+px) {
+        width: 25%;
+      }
     }
   }
-  &__container{
-    position: relative;
-  }
+
   &__olark-launch-button {
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    bottom: 10px;
-
-    right: 20px;
-    //left: auto;
-    //width: auto;
+    bottom: 5px;
+    right: 15px;
     border-radius: 100px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
@@ -58,9 +75,14 @@
     cursor: pointer;
     padding: 0 25px;
     background-color: $bc08;
-    span{
+    @media (min-width: $md11+px) {
+      bottom: 35px;
+    }
+
+    span {
       display: none;
     }
+
     &:hover {
       background-color: $tc051;
     }
@@ -71,6 +93,136 @@
       margin-top: 15px;
       margin-bottom: 5px;
       margin-right: 0;
+    }
+  }
+
+  &__bottom__container {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    @media (min-width: $md4+px) {
+      //  TODO: flex justify-content
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    font-size: 14px;
+    line-height: 1;
+    color: $tc02;
+    border: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    z-index: -1;
+    margin: 0;
+
+  }
+
+  &__bottom:after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid $bc082;
+    @media (min-width: $md4+px) {
+      display: none;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    align-self: flex-end;
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    @media (min-width: $md11+px) {
+      left: 50%;
+      margin-left: -57px;
+    }
+    @media (min-width: $md4+px) {
+      order: 2;
+    }
+
+    li > a {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    a {
+      display: block;
+      width: 34px;
+      height: 34px;
+      background-color: $bc08;
+      border-radius: 50%;
+      margin: 2px;
+    }
+
+    a:hover {
+      background-color: $tc16;
+      transition: all 0.3s ease 0s;
+    }
+
+    #social-s {
+      background-image: url(../public/assets/imgs/2017/01/social-skype.svg);
+      background-size: 22px;
+    }
+
+    #social-in {
+      background-image: url(../public/assets/imgs/2017/01/social-in.svg);
+      background-size: 18px;
+    }
+
+    #social-m {
+      background-image: url(../public/assets/imgs/2017/01/social-mail.svg);
+      background-size: 22px;
+    }
+
+    order: 1;
+    margin: 0 0 20px;
+    @media (min-width: $md3+px) {
+
+    }
+  }
+
+  &__copyright {
+    //margin-bottom: 5px;
+    order: 2;
+
+    p {
+      font-family: $fontfamilyOpenSans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      color: $tc10;
+      margin: 0;
+      text-align: center;
+    }
+
+    p:nth-child(2) {
+      display: none;
+      @media (min-width: $md3+px) {
+        display: block;
+      }
+    }
+    @media (min-width: $md4+px) {
+      order: 2;
+    }
+  }
+
+  &__empty {
+    display: none;
+    @media (min-width: $md4+px) {
+      order: 1;
     }
   }
 }
