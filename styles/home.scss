@@ -276,6 +276,9 @@
     color: $tc01;
     text-align: center;
     font-weight: 300;
+    a{
+      padding-bottom: 35px;
+    }
     //font-size: 18px;
     //font-family: $fontfamilyOpenSans-serif;
     @media (min-width: $md3+px) {
