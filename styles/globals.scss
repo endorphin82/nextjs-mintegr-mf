@@ -5,7 +5,7 @@
 @import 'nav';
 @import 'slider';
 @import 'home';
-@import 'footer';
+
 
 @import "./fontawesome-free-5.15.1-web/scss/fontawesome.scss";
 @import "./fontawesome-free-5.15.1-web/scss/solid.scss";
@@ -31,19 +31,49 @@ main {
 }
 
 .container,
-.left-sidebar,
-.footer__bottom__container {
+.left-sidebar {
   box-sizing: border-box;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: $md3+px) {
+  .container,
+  .left-sidebar,
+  .right-sidebar {
+    max-width: 744px;
+  }
+}
 
 @media (min-width: $md4+px) {
   .container,
   .left-sidebar,
-  .right-sidebar,
-  .footer__bottom__container {
+  .right-sidebar {
     max-width: 940px;
   }
 }
+
+@media (min-width: $md5+px) {
+  .container,
+  .left-sidebar,
+  .right-sidebar {
+  max-width: 960px;
+  }
+}
+
+@media (min-width: $md6+px) {
+  .container,
+  .left-sidebar,
+  .right-sidebar {
+    max-width: 1200px;
+  }
+}
+@media (min-width: $md7+px) {
+  .container,
+  .left-sidebar,
+  .right-sidebar {
+    max-width: 1400px;
+  }
+}
+
+@import 'footer';
