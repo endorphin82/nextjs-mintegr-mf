@@ -6,12 +6,12 @@ const initialState = {
   isOpen: false
 }
 
-const hamburger = (state: initialState = initialState, { type, payload }: ActionsTypes): initialState => {
-  switch (type) {
+const hamburger = (state: initialState = initialState, action: ActionsTypes): initialState => {
+  switch (action.type) {
     case IS_OPEN_HAMBURGER:
       return {
         ...state,
-        isOpen: payload
+        isOpen: action.payload
       }
     default:
       return state

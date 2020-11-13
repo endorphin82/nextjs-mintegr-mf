@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { Footer } from "../Footer"
 import dynamic from "next/dynamic"
-
+import HomeHeader from "../HomeHeader"
 const HomeHeaderDynamicComponentWithNoSSR = dynamic(
   () => import ("../HomeHeader"),
   { ssr: false }
@@ -19,6 +19,7 @@ export function HomeLayout({ children }) {
       </Head>
 
       <HomeHeaderDynamicComponentWithNoSSR />
+      {/*<HomeHeader />*/}
 
       <main className="main">
         {children}
