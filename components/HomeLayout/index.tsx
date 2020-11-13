@@ -1,10 +1,13 @@
 import Head from "next/head"
 import { Footer } from "../Footer"
 import dynamic from "next/dynamic"
-import HomeHeader from "../HomeHeader"
+
 const HomeHeaderDynamicComponentWithNoSSR = dynamic(
-  () => import ("../HomeHeader"),
-  { ssr: false }
+  () => import("../HomeHeader").then((mod) => mod.HomeHeader),
+  { ssr: false,
+    // TODO: nav menu without js
+    loading: () => <p>...</p>
+  }
 )
 
 export function HomeLayout({ children }) {
@@ -19,7 +22,6 @@ export function HomeLayout({ children }) {
       </Head>
 
       <HomeHeaderDynamicComponentWithNoSSR />
-      {/*<HomeHeader />*/}
 
       <main className="main">
         {children}

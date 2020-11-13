@@ -11,7 +11,7 @@ const HomeNavigationDynamicComponentWithNoSSR = dynamic(
   { ssr: false }
 )
 
-export default function HomeHeader() {
+export function HomeHeader() {
   const clientWidth = useSelector(state => state.client_width.clientWidth)
 
   // TODO: check https://usehooks.com/useWindowSize/
