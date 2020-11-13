@@ -52,13 +52,13 @@ export default function Home() {
             </figure>
 
 
-            <div className="home__card">
+            <figure className="home__card">
               <img src="/assets/imgs/home/hp-4.png" alt="Contact us" />
-              <div className="home__card-text-list">
+              <figcaption className="home__card-text-list">
                 <p className="home__list-card-title"> 4. After approval we <span className="home__span-bold">start working immediately</span>.
                 </p>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
 
 
             <figure className="home__card">

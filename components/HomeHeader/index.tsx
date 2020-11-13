@@ -2,24 +2,45 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 import { MobileNavigation } from "../Navigation/MobileNavigation"
+import { useEffect } from "react"
+import { useSetClientWidth } from "../../redux/hooks"
+import { useSelector } from "react-redux"
 
 const HomeNavigationDynamicComponentWithNoSSR = dynamic(
   () => import ("../Navigation/HomeNavigation"),
   { ssr: false }
 )
 
-function HomeHeader() {
-  const isTabletOrMobileDevice = useMediaQuery({
-    query: "(max-device-width: 768px)"
+export function HomeHeader() {
+  const clientWidth = useSelector(state => state.client_width.clientWidth)
+
+  // TODO: check https://usehooks.com/useWindowSize/
+
+  const setClientWidth = useSetClientWidth()
+
+  useEffect(() => {
+    function screenTest() {
+      setClientWidth(window?.innerWidth)
+      // console.log("useEffect", {
+      //   clientWidth: window?.innerWidth
+      // })
+    }
+
+    screenTest()
+
+    window?.addEventListener("resize", screenTest)
+
+    return () => window?.removeEventListener("resize", screenTest)
+
   })
 
   return (
     <>
-      {isTabletOrMobileDevice && <MobileNavigation />}
+      {clientWidth < 768 && <MobileNavigation />}
       <div className="darker-effect">
         <div className="header">
           <div className="container">
-            {isTabletOrMobileDevice
+            {clientWidth < 768
               ?
               <div className="header__logo">
                 <Link href={"/"}>
@@ -36,5 +57,3 @@ function HomeHeader() {
     </>
   )
 }
-
-export default HomeHeader
