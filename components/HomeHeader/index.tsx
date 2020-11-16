@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic"
 import Link from "next/link"
-import { useMediaQuery } from "react-responsive"
 import { MobileNavigation } from "../Navigation/MobileNavigation"
 import React, { useEffect } from "react"
 import { useSetClientWidth } from "../../redux/hooks"
 import { useSelector } from "react-redux"
 
 import { NoJsNavigation } from "../Navigation/NoJsNavigation"
+import { OlarkContainer } from "../OlarkContainer"
 
 const HomeNavigationDynamicComponentWithNoSSR = dynamic(
   () => import("../Navigation/HomeNavigation").then((mod) => mod.HomeNavigation),
@@ -24,9 +24,6 @@ export function HomeHeader() {
   useEffect(() => {
     function screenTest() {
       setClientWidth(window?.innerWidth)
-      // console.log("useEffect", {
-      //   clientWidth: window?.innerWidth
-      // })
     }
 
     screenTest()
@@ -39,6 +36,7 @@ export function HomeHeader() {
 
   return (
     <>
+      <OlarkContainer/>
       {clientWidth < 768 && <MobileNavigation />}
       <div className="darker-effect">
         <div className="header">
