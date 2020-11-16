@@ -3,7 +3,7 @@ import { Navigation } from "./Navigation"
 import Slider from "react-slick"
 import { useState } from "react"
 
-function HomeNavigation() {
+export function HomeNavigation() {
   const [nav1, setNav1] = useState()
   const [nav2, setNav2] = useState()
 
@@ -52,6 +52,7 @@ function HomeNavigation() {
   return (
     <>
       <Navigation />
+      {/*<NoJsNavigation />*/}
       <Slider
         {...settings1}
         // @ts-ignore
@@ -59,7 +60,7 @@ function HomeNavigation() {
       >
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
           <Card
-
+      
             title={<Avatar size={64} src="/assets/imgs/homeheader/2312dws.png" />}
             hoverable
           >
@@ -71,9 +72,9 @@ function HomeNavigation() {
           </Card>
         </div>
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
-
+      
           <Card
-
+      
             title={<Avatar size={64} src="/assets/imgs/homeheader/support.png" />}
             hoverable
           >
@@ -86,7 +87,7 @@ function HomeNavigation() {
           </Card>
         </div>
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
-
+      
           <Card
             // style={{              boxSizing: "border-box",
             //   backgroundColor: "transparent",
@@ -108,7 +109,7 @@ function HomeNavigation() {
           </Card>
         </div>
       </Slider>
-
+      
       <Slider
         {...settings2}
         // @ts-ignore
@@ -129,5 +130,3 @@ function HomeNavigation() {
     </>
   )
 }
-
-export default HomeNavigation
