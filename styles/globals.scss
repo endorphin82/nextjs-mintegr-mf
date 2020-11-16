@@ -3,9 +3,9 @@
 @import 'fonts';
 @import 'menu';
 @import 'nav';
+@import 'nojsnav';
 @import 'slider';
 @import 'home';
-
 
 @import "./fontawesome-free-5.15.1-web/scss/fontawesome.scss";
 @import "./fontawesome-free-5.15.1-web/scss/solid.scss";
@@ -37,6 +37,7 @@ main {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media (min-width: $md3+px) {
   .container,
   .left-sidebar,
@@ -57,7 +58,7 @@ main {
   .container,
   .left-sidebar,
   .right-sidebar {
-  max-width: 960px;
+    max-width: 960px;
   }
 }
 
@@ -68,6 +69,7 @@ main {
     max-width: 1200px;
   }
 }
+
 @media (min-width: $md7+px) {
   .container,
   .left-sidebar,

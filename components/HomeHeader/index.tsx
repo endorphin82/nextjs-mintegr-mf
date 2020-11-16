@@ -2,13 +2,16 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 import { MobileNavigation } from "../Navigation/MobileNavigation"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
 import { useSetClientWidth } from "../../redux/hooks"
 import { useSelector } from "react-redux"
 
+import { NoJsNavigation } from "../Navigation/NoJsNavigation"
+
 const HomeNavigationDynamicComponentWithNoSSR = dynamic(
-  () => import ("../Navigation/HomeNavigation"),
-  { ssr: false }
+  () => import("../Navigation/HomeNavigation").then((mod) => mod.HomeNavigation),
+  // () => import ("../Navigation/HomeNavigation"),
+  { ssr: false, loading: () => <NoJsNavigation /> }
 )
 
 export function HomeHeader() {
