@@ -3,7 +3,6 @@ import { useSetIsShowMenu } from "../../redux/hooks"
 import { Menu, ActivityIndicator, NavBar } from "antd-mobile"
 import { useState } from "react"
 import { useRouter } from "next/router"
-import Link from "next/link"
 
 const data = [
   {
