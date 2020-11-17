@@ -1,9 +1,18 @@
-export function OlarkContainer() {
+import { useSelector } from "react-redux"
+import { useSetIsShowForm } from "../../redux/hooks"
 
+export function OlarkContainer() {
+  const isShowForm = useSelector(state => state.is_open_form.isOpen)
+  const setIsShowForm = useSetIsShowForm()
+  const onClickHandler = () => {
+    setIsShowForm(false)
+  }
   return (
 
     <div id="olark-container" className="olark-size-lg" aria-hidden="false">
-      <div className="olark-top-bar">
+      <div
+        onClick={onClickHandler}
+        className={isShowForm ? "olark-top-bar active" : "olark-top-bar"}>
         <h2 className="olark-top-bar-text">Contact Us Here</h2>
         <div className="olark-top-bar-button" role="button">
           <svg viewBox="0 0 15.1 8.9" fill="#ffffff"
@@ -19,7 +28,11 @@ export function OlarkContainer() {
           <div className="olark-generated-message">We're not around, but we'd love to chat another time.</div>
         </div>
       </div>
-      <div className="olark-overlay-module-container olark-no-message-form">
+      <div className={
+        isShowForm ? "olark-overlay-module-container active olark-no-message-form"
+          : "olark-overlay-module-container olark-no-message-form"}
+
+      >
         <div className="olark-offline-survey">
           <div className="olark-survey-form" id="olark-custom-survey-form" role="form">
             <div className="olark-survey-form-welcome olark-survey-form-item">

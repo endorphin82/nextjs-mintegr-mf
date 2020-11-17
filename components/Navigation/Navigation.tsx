@@ -1,6 +1,4 @@
 import Link from "next/link"
-// import { useSelector } from "react-redux"
-// import { useSetIsShowMenu } from "../../redux/hooks"
 
 export function Navigation() {
   return (
