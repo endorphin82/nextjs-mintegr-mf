@@ -1,6 +1,5 @@
 import Link from "next/link"
 import ScrollTopArrow from "../ScrollTopArrow"
-import { OlarkContainer } from "../OlarkContainer"
 
 export function Footer() {
   return (
@@ -56,7 +55,6 @@ export function Footer() {
         </div>
 
       </div>
-      <OlarkContainer/>
     </footer>
   )
 }

@@ -31,7 +31,9 @@ export function OlarkContainer() {
                 <div className="olark-survey-form-item olark-survey-form-item-name olark-survey-form-is-required">
                   <span className="olark-survey-form-label">Name</span><span className="olark-survey-form-req-icon"
                                                                              title="Required field"><svg
-                  viewBox="0 0 20 20" enable-background="new 0 0 20 20" x="0"
+                  viewBox="0 0 20 20"
+                  // enable-background="new 0 0 20 20"
+                  x="0"
                   y="0" fill="currentcolor" aria-hidden="true">
                                     <title>Required Asterisk</title>
                                     <desc>signifies that this field can not be left blank</desc>
@@ -44,7 +46,9 @@ export function OlarkContainer() {
                 <div className="olark-survey-form-item olark-survey-form-item-email olark-survey-form-is-required">
                   <span className="olark-survey-form-label">Email</span><span className="olark-survey-form-req-icon"
                                                                               title="Required field"><svg
-                  viewBox="0 0 20 20" enable-background="new 0 0 20 20" x="0"
+                  viewBox="0 0 20 20"
+                  // enable-background="new 0 0 20 20"
+                  x="0"
                   y="0" fill="currentcolor" aria-hidden="true">
                                     <title>Required Asterisk</title>
                                     <desc>signifies that this field can not be left blank</desc>
@@ -59,7 +63,7 @@ export function OlarkContainer() {
                   <span className="olark-survey-form-label">Type a message...</span><span
                   className="olark-survey-form-req-icon" title="Required field"><svg
                   viewBox="0 0 20 20"
-                  enable-background="new 0 0 20 20"
+                  // enable-background="new 0 0 20 20"
                   x="0" y="0" fill="currentcolor"
                   aria-hidden="true">
                   <title>Required Asterisk</title>
@@ -78,10 +82,10 @@ export function OlarkContainer() {
           </div>
         </div>
       </div>
-    {/*  <div className="olark-branding-link"><a role="button" aria-hidden="false"><span*/}
-    {/*    className="olark-branding-link-word ">Powered </span><span className="olark-branding-link-word ">by </span><span*/}
-    {/*    className="olark-branding-link-word accented">Olark </span></a>*/}
-    {/*  </div>*/}
+      {/*<div className="olark-branding-link"><a role="button" aria-hidden="false"><span*/}
+      {/*  className="olark-branding-link-word ">  s</span><span className="olark-branding-link-word "> a</span><span*/}
+      {/*  className="olark-branding-link-word accented">d  </span></a>*/}
+      {/*</div>*/}
     </div>
   )
 }

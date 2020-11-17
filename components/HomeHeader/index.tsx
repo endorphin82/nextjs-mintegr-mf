@@ -10,7 +10,6 @@ import { OlarkContainer } from "../OlarkContainer"
 
 const HomeNavigationDynamicComponentWithNoSSR = dynamic(
   () => import("../Navigation/HomeNavigation").then((mod) => mod.HomeNavigation),
-  // () => import ("../Navigation/HomeNavigation"),
   { ssr: false, loading: () => <NoJsNavigation /> }
 )
 
