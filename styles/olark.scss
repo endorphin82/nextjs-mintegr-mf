@@ -9,15 +9,6 @@
     position: fixed;
     z-index: 2147483646;
     top: 20px;
-    //top: inherit;
-    //right: 0;
-
-    //888
-    //@media (min-width: $md3+px) {
-    //  //margin: 0 0 0 50%;
-    //  margin-top: 100%;
-    //}
-
     right: 0;
     bottom: 0;
     zoom: 0;
@@ -64,14 +55,10 @@
     overflow-x: visible;
     overflow-y: visible;
     clip: auto;
-
     right: 0;
     left: 0;
-    //min-width: 0;
-    //max-width: none;
     min-height: 0;
     max-height: none;
-    //margin: 0;
 
     //888
     @media (min-width: $md3+px) {
@@ -286,9 +273,6 @@
     padding: 0 10px;
     color: #959ba1;
     background: #fff;
-    //left: 0;
-    //right: 0;
-    //888
     @media (min-width: $md3+px) {
       padding: 0 30px 0 10px;
       margin-left: 50%;
@@ -340,11 +324,10 @@
         background-clip: border-box;
         background-origin: padding-box;
         background-size: auto;
-        //888
+
         @media (min-width: $md3+px) {
           width: 50%;
         }
-
         width: 100%;
 
         &-welcome {
