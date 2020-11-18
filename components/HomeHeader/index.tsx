@@ -6,7 +6,7 @@ import { useSetClientWidth } from "../../redux/hooks"
 import { useSelector } from "react-redux"
 
 import { NoJsNavigation } from "../Navigation/NoJsNavigation"
-import { OlarkContainer } from "../OlarkContainer"
+import Olark from 'react-olark-plugin';
 
 const HomeNavigationDynamicComponentWithNoSSR = dynamic(
   () => import("../Navigation/HomeNavigation").then((mod) => mod.HomeNavigation),
@@ -35,7 +35,9 @@ export function HomeHeader() {
 
   return (
     <>
-      <OlarkContainer/>
+      <Olark
+        siteId={'9913-989-10-5485'}
+      />
       {clientWidth < 768 && <MobileNavigation />}
       <div className="darker-effect">
         <div className="header">

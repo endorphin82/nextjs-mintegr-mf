@@ -9,13 +9,6 @@ export function useSetIsShowMenu() {
   }, [dispatch])
 }
 
-export function useSetIsShowForm() {
-  const dispatch = useDispatch()
-  return useCallback((isOpen: boolean) => {
-    dispatch(setIsOpenForm(isOpen))
-  }, [dispatch])
-}
-
 export function useSetClientWidth() {
   const dispatch = useDispatch()
   return useCallback((clientWidth: number) => {

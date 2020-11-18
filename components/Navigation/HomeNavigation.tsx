@@ -52,7 +52,6 @@ export function HomeNavigation() {
   return (
     <>
       <Navigation />
-      {/*<NoJsNavigation />*/}
       <Slider
         {...settings1}
         // @ts-ignore
@@ -60,7 +59,7 @@ export function HomeNavigation() {
       >
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
           <Card
-      
+
             title={<Avatar size={64} src="/assets/imgs/homeheader/2312dws.png" />}
             hoverable
           >
@@ -72,9 +71,9 @@ export function HomeNavigation() {
           </Card>
         </div>
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
-      
+
           <Card
-      
+
             title={<Avatar size={64} src="/assets/imgs/homeheader/support.png" />}
             hoverable
           >
@@ -87,16 +86,8 @@ export function HomeNavigation() {
           </Card>
         </div>
         <div onMouseEnter={(e) => onMouseEnterHandler(e)}>
-      
+
           <Card
-            // style={{              boxSizing: "border-box",
-            //   backgroundColor: "transparent",
-            //   border: "1px solid rgba(0, 0, 0, 0)",
-            //   flex: "1 1 auto",
-            //   margin: "5px",
-            //   display: "flex",
-            //   flexDirection: "column",
-            //   justifyContent: "space-around" }}
             title={<Avatar size={64} src="/assets/imgs/homeheader/support3.png" />}
             hoverable
           >
@@ -109,7 +100,7 @@ export function HomeNavigation() {
           </Card>
         </div>
       </Slider>
-      
+
       <Slider
         {...settings2}
         // @ts-ignore
