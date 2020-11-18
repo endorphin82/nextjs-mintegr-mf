@@ -1,10 +1,15 @@
 import Link from "next/link"
 import ScrollTopArrow from "../ScrollTopArrow"
+import Olark from 'react-olark-plugin';
 
 export function Footer() {
 
   return (
+
     <footer className="footer">
+      <Olark
+        siteId={'9913-989-10-5485'}
+      />
       <div className="footer__partner">
         <div className="footer__container container">
           <div className="footer__m-general-extension-partner">
