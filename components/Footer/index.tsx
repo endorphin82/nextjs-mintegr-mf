@@ -1,13 +1,8 @@
 import Link from "next/link"
 import ScrollTopArrow from "../ScrollTopArrow"
-import { useSetIsShowForm } from "../../redux/hooks"
-
 
 export function Footer() {
-  const setIsShowForm = useSetIsShowForm()
-  const onClickHandler = () => {
-    setIsShowForm(true)
-  }
+
   return (
     <footer className="footer">
       <div className="footer__partner">
@@ -34,16 +29,6 @@ export function Footer() {
               <img src="/assets/imgs/2017/01/tech9.png" />
             </div>
           </div>
-
-          <button
-            onClick={onClickHandler}
-            className="footer__olark-launch-button">
-            <svg>
-              <path fill="#ffffff"
-                    d="M28,3.2C28,1.5,26.5,0,24.8,0H3.2C1.5,0,0,1.5,0,3.2v11.5C0,16.5,1.5,18,3.2,18h21.5c1.8,0,3.2-1.5,3.2-3.2 V3.2z M24.7,14.8c-0.2,0.1-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.3l-5-5.3l-3.6,3c-0.3,0.2-0.6,0.3-0.9,0.3s-0.7-0.1-0.9-0.4l-3.6-3 l-5,5.3c-0.2,0.2-0.4,0.3-0.6,0.3c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.4-0.8,0-1.2l4.9-5.3L3.3,4.5C3,4.2,2.9,3.6,3.2,3.3 C3.5,2.9,4,2.9,4.4,3.2l9.6,7.9l9.6-7.9c0.4-0.3,0.9-0.2,1.2,0.1c0.3,0.4,0.2,0.9-0.1,1.2l-4.8,3.9l4.9,5.3 C25.1,14,25,14.5,24.7,14.8z"></path>
-            </svg>
-            <span>Contact Us Here</span>
-          </button>
 
         </div>
       </div>
