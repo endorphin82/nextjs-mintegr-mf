@@ -20,7 +20,7 @@ export default function CustomWebDevelopment() {
               <div className="jsdev__cards">
                 <div className="jsdev__card">
                   <div className="jsdev__card_icon">
-                    <img className=" jsdev__card_icon" src="/assets/imgs/custom-web-development/target/educationb.png"/>
+                    <img className="jsdev__card_icon" src="/assets/imgs/custom-web-development/target/educationb.png"/>
                   </div>
                   <div className="jsdev__card_post">
                     <div className="jsdev__card_title_bl">
