@@ -1,0 +1,57 @@
+.get-quote {
+  margin-top: 50px;
+  font-family: $fontTrebuchet;
+  box-sizing: border-box;
+
+  &__button-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    .ant-btn.ant-btn-primary:hover {
+      background-color: $bc061;
+      transition: all 0.3s ease 0s;
+    }
+
+    .ant-btn.ant-btn-primary {
+      padding: 0 35px;
+      font-family: $fontTrebuchet;
+      background-color: $bc08;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+
+  .ant-card-head-title {
+    font-family: $fontfamilyOpenSans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    color: $tc17;
+    border-bottom: 0 none;
+    font-size: 23px;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .site-form-item-icon {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  .ant-card-head,
+  .ant-card-body {
+    border: 1px solid $borderColor011;
+    background: $bc04;
+    //color: $tc121;
+    color: rgba(0, 0, 0, 0.25);
+
+  }
+
+  .ant-card-body {
+    border-top: none;
+  }
+
+  .ant-card-head {
+    border-bottom: none;
+  }
+}
