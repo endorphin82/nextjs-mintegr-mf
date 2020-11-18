@@ -1,0 +1,143 @@
+.jsdev {
+  .jsdev__img {
+    margin: 0;
+    -webkit-align-self: center;
+    align-self: center;
+  }
+
+  .jsdev__cards {
+    /*flex-direction: column;*/
+  }
+
+  .jsdev__card {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .jsdev__card_icon {
+    margin: 0;
+    min-width: 38px !important;
+    max-width: 38px !important;
+  }
+
+  .jsdev__card_post {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .jsdev__card_title {
+    text-align: center;
+  }
+
+  .jsdev__card_title_bl {
+    text-align: center;
+  }
+
+  .jsdev__card_text {
+    text-align: center;
+  }
+
+  .jsdev__card_text_bl {
+    text-align: center;
+  }
+
+  .jsdev__text {
+    text-align: center;
+  }
+
+
+}
+
+
+@media (min-width: $md3+px) {
+
+  .jsdev__title {
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    color: #000;
+    margin-top: 35px;
+  }
+
+  .jsdev__text {
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    color: #777;
+  }
+
+  .jsdev__card p {
+    display: inline-block;
+  }
+
+  .jsdev__cards {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .jsdev__card {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1 0 40%;
+    flex: 1 0 40%;
+    margin-bottom: 30px;
+  }
+
+  .jsdev__card_icon {
+    -webkit-align-self: center;
+    align-self: center;
+    margin-right: 20px;
+    min-width: 50px !important;
+    max-width: 50px !important;
+  }
+
+  .icon-webdev {
+
+  }
+
+  .jsdev__card_post {
+    padding-right: 10px;
+  }
+
+  .jsdev__card_title {
+    line-height: 36px;
+    font-weight: 700;
+    color: #777;
+  }
+
+  .jsdev__card_title_bl {
+    line-height: 36px;
+    font-weight: 700;
+    color: black;
+  }
+
+  .jsdev__card_text {
+    color: #ccc;
+  }
+
+  .jsdev__card_text_bl {
+    color: #1e73be;
+  }
+
+  .jsdev__img {
+    max-width: 100%;
+    -webkit-vertical-align: middle;
+    vertical-align: middle;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+}
