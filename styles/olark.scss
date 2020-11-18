@@ -1,7 +1,16 @@
-#olark-container {
-  div.olark-top-bar {
+div#olark-container {
+  top: 45px !important;
+  @media (min-width: $md3+px) {
+    top: 0 !important;
+  }
+
+  .olark-top-bar {
     background-color: $bc08 !important;
     border-color: $borderColor06 !important;
+  }
+
+  .olark-overlay-module-container {
+    transition: all 1s ease !important;
   }
 }
 
@@ -15,21 +24,8 @@
       background-color: $tc051 !important;
     }
 
-    //@media (min-width: $md11+px) {
-    //  bottom: 30px !important;
-    //}
-
     @media (min-width: $md3+px) {
       bottom: 54px !important;
     }
-
-    //div.olark-button-text {
-    //  //display: none !important;
-    //
-    //  @media (min-width: $md3+px) {
-    //    //display: inline-block !important;
-    //  }
-    //}
-
   }
 }
