@@ -19,7 +19,17 @@ body {
   background-color: $bc01;
   color: $tc02;
 }
-
+hr{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: $tc02;
+  font-weight: normal;
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid $borderColor05;
+  border-bottom: 1px solid $borderColor02;
+}
 .flex-around {
   min-height: 100vh;
   display: flex;
