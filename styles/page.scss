@@ -91,9 +91,10 @@ ul.breadcrumb.breadcrumb__t {
 .left-sidebar {
   @media (min-width: $md3+px) {
     flex: 1 1 auto;
+    padding-top: 40px;
   }
   flex: 1 0 100%;
-  padding-top: 40px;
+
   font-family: $fontTrebuchet;
   font-size: 13px;
   line-height: 18px;
@@ -102,7 +103,7 @@ ul.breadcrumb.breadcrumb__t {
   min-height: 1px;
   max-width: 770px;
   position: static;
-
+  padding-top: 0;
 }
 
 .right-sidebar {
