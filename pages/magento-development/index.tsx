@@ -3,7 +3,7 @@ import RightSidebar from "../../components/RightSidebar";
 import {MainLayout} from "../../components/MainLayout";
 import Link from "next/link";
 
-export default function Page() {
+export default function MagentoDevelopment() {
   return (
     <MainLayout>
       <TitleOfAnyPage/>
@@ -136,6 +136,7 @@ export default function Page() {
               get fast, advanced, competitive and a secure store</b>
             </p>
           </div>
+
         </div>
         <RightSidebar/>
       </div>
