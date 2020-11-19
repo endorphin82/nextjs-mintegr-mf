@@ -136,3 +136,78 @@ i.fa-li.fa.fa-angle-right {
   font-family: $fontAwesome;
 }
 
+.bold__numbers {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h5 {
+  font: normal 18px/22px Open Sans;
+  color: #1c1c1c;
+}
+
+.fa-refresh:before {
+  content: "\f021";
+}
+
+.fa-money:before {
+  content: "\f0d6";
+}
+
+
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+.fa-li, .fa, .fas, .fab {
+  color: #676056;
+  list-style: none;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  //font-size: 1.33333333em;
+  //line-height: .75em;
+  //vertical-align: -15%;
+  position: absolute;
+  width: 2.14285714em;
+  top: .14285714em;
+  text-align: center;
+  padding-top: 2px !important;
+  left: -1.85714286em;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.fa-btc:before {
+  content: "\f15a";
+  font-size: 20px;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+.fa-tachometer-alt, .fa-file-alt, .fa-btc {
+  font-size: 20px;
+  line-height: 15px;
+}
+
+.fa-file-alt:before{
+  content: "\f0f6";
+  font-size: 20px;
+  line-height: 15px;
+  vertical-align: top;
+}
+.fa-tachometer-alt:before, .fa-tachometer-alt:before {
+  content: "\f0e4";
+  font-size: 20px;
+  line-height: 15px;
+  vertical-align: top;
+}
