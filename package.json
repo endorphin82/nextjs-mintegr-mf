@@ -16,7 +16,6 @@
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-olark-plugin": "0.0.11",
     "react-redux": "^7.2.2",
     "react-responsive": "^8.1.0",
     "react-slick": "^0.27.13",

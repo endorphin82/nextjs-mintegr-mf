@@ -199,15 +199,99 @@ h5 {
   line-height: 15px;
 }
 
-.fa-file-alt:before{
+.fa-file-alt:before {
   content: "\f0f6";
   font-size: 20px;
   line-height: 15px;
   vertical-align: top;
 }
+
 .fa-tachometer-alt:before, .fa-tachometer-alt:before {
   content: "\f0e4";
   font-size: 20px;
   line-height: 15px;
   vertical-align: top;
+}
+
+#post-2114 {
+
+  i.fa-li {
+    font-size: 13px;
+    line-height: 15px;
+    left: -2rem;
+  }
+
+  li:before {
+    content: '';
+    display: inline-flex;
+    left: -1.5rem;
+    top: .3rem;
+    position: absolute;
+    height: 1.1em;
+    width: 1.1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+
+  li.fa-code:before {
+    background-image: url(../public/assets/imgs/outsourcing/icons/code.svg);
+  }
+
+  li.fa-usd:before {
+    background-image: url(../public/assets/imgs/outsourcing/icons/usd.svg);
+  }
+
+  li.fa-check:before {
+    background-image: url(../public/assets/imgs/outsourcing/icons/check.svg);
+  }
+
+  li.fa-clock-o:before {
+    background-image: url(../public/assets/imgs/outsourcing/icons/clock.svg);
+  }
+
+}
+
+#post-2116,
+#post-2153 {
+  ul.ul-li-arrow li:before,
+  li.ul-li-arrow:before {
+    content: '';
+    display: inline-flex;
+    left: -1.5rem;
+    top: .5rem;
+    position: absolute;
+    height: .7em;
+    width: .7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(../public/assets/imgs/outstaffing/icons/angle-right.svg);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+#post-2153 {
+  ul.ul-li-check li:before {
+    content: '';
+    display: inline-flex;
+    left: -1.5rem;
+    top: .5rem;
+    position: absolute;
+    height: .7em;
+    width: .7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(../public/assets/imgs/general/icons/check.svg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .fa-question:before {
+    content: "\f128";
+    font-size: 13px;
+    line-height: 15px;
+    vertical-align: top;
+  }
+
 }
