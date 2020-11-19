@@ -3,6 +3,7 @@ import { useSetIsShowMenu } from "../../redux/hooks"
 import { Menu, ActivityIndicator, NavBar } from "antd-mobile"
 import { useState } from "react"
 import { useRouter } from "next/router"
+import { MenuOutlined } from "@ant-design/icons"
 
 const data = [
   {
@@ -160,8 +161,14 @@ export function MobileNavigation() {
 
       <NavBar
         // leftContent={}
-        rightContent={<a><img onClick={handleClick} src="/assets/imgs/menu.svg"
-                              className="am-icon am-icon-md" alt="" /></a>}
+        rightContent={<a>
+          <MenuOutlined style={{color: "white"}}
+                        onClick={handleClick} />
+          {/*<img onClick={handleClick} */}
+          {/*                    src="/assets/imgs/menu.svg"*/}
+          {/*                    className="am-icon am-icon-md" alt="" />*/}
+
+        </a>}
         mode="light"
         // icon={<img src="/assets/imgs/menu.svg"
         //            className="am-icon am-icon-md" alt=""/>}
