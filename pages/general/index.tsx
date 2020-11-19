@@ -14,9 +14,8 @@ export default function General() {
               functionality out of the box. But anyway, rather difficult to say accurate terms and cost without
               additional requirements.</h4>
             <p><img className="alignnone wp-image-2470 size-full"
-                    src="https://m-integration.com/wp-content/uploads/2016/12/faqs-banner.jpg" alt="faqs-banner"
+                    src="/assets/imgs/general/faqs-banner.jpg" alt="faqs-banner"
                     width="900" height="200"
-                    srcSet="https://m-integration.com/wp-content/uploads/2016/12/faqs-banner.jpg 900w, https://m-integration.com/wp-content/uploads/2016/12/faqs-banner-300x67.jpg 300w, https://m-integration.com/wp-content/uploads/2016/12/faqs-banner-768x171.jpg 768w"
                     sizes="(max-width: 900px) 100vw, 900px"/></p>
             <h4 className="custom-h4">Based on that, before creating Magento store you should ask yourself the following
               questions:</h4>
@@ -104,7 +103,7 @@ export default function General() {
             <p>&nbsp;</p>
             <h4 className="custom-h4">We have made a list of&nbsp;different packages:</h4>
             <p><img className="alignnone wp-image-2470 size-full"
-                    src="https://m-integration.com/wp-content/uploads/2017/01/packs.png" alt="faqs-banner" width="500" />
+                    src="/assets/imgs/general/packs.png" alt="faqs-banner" width="500" />
             </p>
             <p className="custom-text-os"><b>Basic Magento Store</b></p>
             <ul id="ul-li-arrow" className="fa-ul custom-icon-ul ul-li-check">
