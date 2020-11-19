@@ -252,3 +252,46 @@ h5 {
 
 }
 
+#post-2116,
+#post-2153 {
+  ul.ul-li-arrow li:before,
+  li.ul-li-arrow:before {
+    content: '';
+    display: inline-flex;
+    left: -1.5rem;
+    top: .5rem;
+    position: absolute;
+    height: .7em;
+    width: .7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(../public/assets/imgs/outstaffing/icons/angle-right.svg);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+#post-2153 {
+  ul.ul-li-check li:before {
+    content: '';
+    display: inline-flex;
+    left: -1.5rem;
+    top: .5rem;
+    position: absolute;
+    height: .7em;
+    width: .7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(../public/assets/imgs/general/icons/check.svg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .fa-question:before {
+    content: "\f128";
+    font-size: 13px;
+    line-height: 15px;
+    vertical-align: top;
+  }
+
+}
