@@ -1,6 +1,6 @@
 import Link from "next/link"
 import ScrollTopArrow from "../ScrollTopArrow"
-import Olark from 'react-olark-plugin';
+import Olark  from '../../lib/react-olark-plugin';
 
 export function Footer() {
 
