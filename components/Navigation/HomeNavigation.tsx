@@ -50,7 +50,7 @@ export function HomeNavigation() {
   }
 
   return (
-    <>
+    <div id="home-slider">
       <Navigation />
       <Slider
         {...settings1}
@@ -118,6 +118,6 @@ export function HomeNavigation() {
         </div>
       </Slider>
       <div className="camera_line" />
-    </>
+    </div>
   )
 }
