@@ -12,15 +12,6 @@ export default function TitleOfAnyPage() {
     <>
       <h1 className="title-header">{routerTitle}</h1>
       <div>{example}</div>
-      {/*{ // @ts-ignore*/}
-      {/*  (window !== "undefined") ? <Breadcrumbs*/}
-      {/*  // item={}*/}
-      {/*  finalItem={"b"}*/}
-      {/*  finalProps={{*/}
-      {/*    style: { color: "red" }*/}
-      {/*  }}*/}
-      {/*/> : <div></div>*/}
-      {/*}*/}
 
       <ul className="breadcrumb breadcrumb__t">
         <li>
