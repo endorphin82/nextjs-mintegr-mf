@@ -5,29 +5,17 @@ import Slider from "react-slick"
 export default function About() {
 
   const settingsResp = {
-    variableWidth: false,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
-    // dots: false,
+    // variableWidth: false,
     arrows: false,
     infinite: true,
-    speed: 0,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 70000,
+    // speed: 0,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: false,
     adaptiveHeight: false,
     className: "customers-slider",
-
     dots: true,
-    // className: "customers-slider",
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // arrows: false,
-    // infinite: true,
-    // speed: 0,
-    // slidesToShow: 3,
-    // slidesToScroll: 1,
+
     responsive: [
       {
         breakpoint: 1024,

@@ -59,10 +59,10 @@ ul.custom-icon-ul {
 }
 
 .size-full {
-  @media (max-width: 980px) {
-    box-sizing: border-box;
-    width: 100%;
-  }
+  //@media (max-width: 980px) {
+  //  box-sizing: border-box;
+  //  width: 100%;
+  //}
 
   font-family: $fontTrebuchet;
   font-size: 13px;
@@ -293,16 +293,33 @@ h5 {
 
 #post-1797 {
   .row__offer {
+    @media (min-width: $md3+px) {
+      display: flex;
+    }
 
+    .col__about {
+      @media (min-width: $md3+px) {
+        flex-basis: 60%;
+      }
+    }
 
+    .col__offer {
+      @media (min-width: $md3+px) {
+        margin-left: 30px;
+        flex-basis: 40%;
+      }
+
+    }
   }
 
   .row__we-work {
+
     .col__we-work_left {
 
     }
 
     .col__we-work_right {
+
       .grouped_elements {
         border-width: 1px;
         border-color: #f2f2f2;
@@ -333,9 +350,15 @@ h5 {
   }
 
   .row__team {
-
+    @media (min-width: $md3+px) {
+      display: flex;
+    }
 
     .col__offer-big {
+      @media (min-width: $md3+px) {
+        flex-basis: 60%;
+      }
+
       .col__offer-big-img {
 
         .size-fulll {
@@ -348,7 +371,15 @@ h5 {
     }
 
     .col__offer-thumb {
-
+      @media (min-width: $md3+px) {
+        margin-left: 30px;
+        //align-items: center;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-basis: 40%;
+      }
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
       font-size: 13px;
       line-height: 18px;
@@ -371,7 +402,6 @@ h5 {
         padding: 0;
         text-align: center;
         margin: 0px;
-        margin: 0px;
         text-align: center;
 
         li {
@@ -384,6 +414,10 @@ h5 {
 
           img {
             width: 68px;
+            @media (min-width: $md3+px) {
+              width: 96px;
+            }
+
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             font-size: 13px;
             color: #b2b2b2;
@@ -447,8 +481,7 @@ h5 {
   }
 
   .row__customers {
-
-
+    margin-bottom: 30px;
   }
 
   .custom-h4 {
