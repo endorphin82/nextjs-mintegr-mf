@@ -5,14 +5,29 @@ import Slider from "react-slick"
 export default function About() {
 
   const settingsResp = {
-    dots: true,
-    className: "customers-slider",
-    autoplay: false,
+    variableWidth: false,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    // dots: false,
     arrows: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 4,
+    infinite: true,
+    speed: 0,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 70000,
+    adaptiveHeight: false,
+    className: "customers-slider",
+
+    dots: true,
+    // className: "customers-slider",
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    // arrows: false,
+    // infinite: true,
+    // speed: 0,
+    // slidesToShow: 3,
+    // slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -52,14 +67,14 @@ export default function About() {
         }
       }]
   }
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    className: "customers-slider"
-  }
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   className: "customers-slider"
+  // }
 
   return (
     <MainLayout>
@@ -284,7 +299,6 @@ export default function About() {
                   src="https://m-integration.com/wp-content/uploads/2019/05/kerluxe1.png" /></div>
                 <div className="company-img"><img
                   src="https://m-integration.com/wp-content/uploads/2019/05/bemaad1.png" /></div>
-
               </Slider>
             </div>
             <div className="spacer"></div>
