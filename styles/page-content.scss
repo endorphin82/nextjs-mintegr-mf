@@ -313,12 +313,21 @@ h5 {
   }
 
   .row__we-work {
+    @media (min-width: $md3+px) {
+      display: flex;
+    }
 
     .col__we-work_left {
-
+      @media (min-width: $md3+px) {
+        flex-basis: 50%;
+      }
     }
 
     .col__we-work_right {
+      @media (min-width: $md3+px) {
+        margin-left: 30px;
+        flex-basis: 50%;
+      }
 
       .grouped_elements {
         border-width: 1px;
