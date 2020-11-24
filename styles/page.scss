@@ -10,6 +10,45 @@
   padding: 55px 0 0;
 }
 
+ol.breadcrumb {
+  font-family: $fontTrebuchet;
+  font-size: 13px;
+  line-height: 18px;
+  color: $tc02;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  hyphens: auto;
+  border-radius: 0;
+  padding: 9px 11px;
+  background: $bc05;
+  width: 100%;
+  text-transform: capitalize !important;
+  li:last-child {
+    font-size: 13px;
+    font-weight: normal;
+    list-style: none;
+    hyphens: auto;
+    line-height: 18px;
+    display: inline;
+    text-shadow: none;
+    border: 1px solid red;
+
+    font-family: $fontTrebuchet;
+    padding: 0;
+    margin: 0;
+    //border: 0;
+    box-sizing: border-box;
+    text-transform: capitalize !important;
+
+    a{
+      color: $tc05;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
 ul.breadcrumb.breadcrumb__t {
   font-family: $fontTrebuchet;
   font-size: 13px;
