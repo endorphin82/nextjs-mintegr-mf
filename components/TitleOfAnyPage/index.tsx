@@ -5,9 +5,10 @@ import { Breadcrumbs } from 'nextjs-breadcrumbs'
 
 export default function TitleOfAnyPage() {
   const router = useRouter()
-  console.log(router)
+  // console.log(router)
   const routerTitle = routerToTitle(router)
   const example = Breadcrumbs()
+  console.log(example?.props?.children?.props)
   return (
     <>
       <h1 className="title-header">{routerTitle}</h1>
