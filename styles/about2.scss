@@ -1,0 +1,14 @@
+#about2 {
+  @import 'slick/slick';
+  @import 'slick/slick-theme';
+
+  .slick-slide img {
+    margin: auto;
+  }
+
+}
+
+#about2.container {
+  padding: 40px;
+  background: #419be0;
+}
