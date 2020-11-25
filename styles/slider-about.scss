@@ -1,142 +1,95 @@
 #post-1797 {
-  .slick-slider.customers-slider.slick-initialized {
-    position: relative;
-    display: flex;
+  @import 'slick/slick';
+  @import 'slick/slick-theme';
+
+  .company-img {
+    border: 1px solid #000;
+    margin: 5%;
+    padding: 10px;
+    display: flex !important;
+
     min-width: 0;
-    //border: 3px solid #20b2bb;
+    max-width: 90%;
 
-    ul.slick-dots {
-
-      position: absolute;
-      bottom: -70px;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: center;
-      display: block;
-
-      li.slick-active {
-        position: relative;
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 5px;
-        padding: 0;
-        cursor: pointer;
-
-        button {
-          margin: auto;
-          -webkit-tap-highlight-color: transparent;
-          list-style: none;
-          display: block;
-          width: 1px;
-          height: 1px;
-          padding: 2px;
-          opacity: .25;
-          background-color: #000;
-          border-radius: 50%;
-          cursor: pointer;
-          color: transparent;
-          border: 0;
-          outline: none;
-        }
-
-      }
-
-      li {
-
-        position: relative;
-        display: inline-block;
-
-        width: 20px;
-        height: 20px;
-        margin: 0 5px;
-        padding: 0;
-        cursor: pointer;
-
-        button {
-          margin: 0 auto;
-          list-style: none;
-          display: block;
-          width: 1px;
-          height: 1px;
-          padding: 2px;
-          background-color: #000;
-          border-radius: 50%;
-          cursor: pointer;
-          color: transparent;
-          border: 0;
-          outline: none;
-        }
-
-      }
+    img {
+      max-width: 100%;
+      height: auto;
     }
-
-
-    .slick-list {
-      //border: 3px solid #20bb2f !important;
-      //min-width: 0;
-      width: 100% !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-
-      .slick-track {
-        //opacity: 1;
-        transform: none !important;
-        //border: 3px solid #b6bb20;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        //min-width: 0;
-        //width: 0 !important;
-        width: 100% !important;
-
-        .slick-slide {
-          display: none !important;
-          width: 0 !important;
-          //border: 3px solid #6120bb;
-        }
-
-        .slick-slide.slick-active {
-          //border: 3px solid #bb205e;
-
-          display: flex !important;
-          flex-grow: 1;
-
-          > div {
-            min-width: 0;
-            width: 100%;
-            //border: 2px solid #00ff7b;
-
-          }
-
-          .company-img {
-            border: 1px solid #000;
-            margin: 5%;
-            padding: 10px;
-            display: flex !important;
-
-            min-width: 0;
-            max-width: 90%;
-
-            img {
-              //border: 2px solid #000;
-
-              max-width: 100%;
-              height: auto;
-
-              //border: 2px solid greenyellow;
-
-            }
-          }
-
-        }
-      }
-    }
-
   }
 
+  .slick-list {
+    overflow: hidden;
+  }
 
+  ul.slick-dots {
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+
+    li.slick-active {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+
+      button {
+        margin: auto;
+        -webkit-tap-highlight-color: transparent;
+        list-style: none;
+        display: block;
+        width: 1px;
+        height: 1px;
+        padding: 2px;
+        opacity: .25;
+        background-color: #000;
+        border-radius: 50%;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+
+      button {
+        margin: 0 auto;
+        list-style: none;
+        display: block;
+        width: 1px;
+        height: 1px;
+        padding: 2px;
+        background-color: #000;
+        border-radius: 50%;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
 }

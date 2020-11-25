@@ -1,0 +1,32 @@
+#about2 {
+  @import 'slick/slick';
+  @import 'slick/slick-theme';
+  //min-width: 0;
+.slider{
+  //min-width: 0;
+}
+
+
+  .company-img {
+    border: 1px solid #000;
+    margin: 5%;
+    padding: 10px;
+    display: flex !important;
+
+    min-width: 0;
+    max-width: 90%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .slick-list{
+    overflow: hidden;
+  }
+
+}
+
+#about2.container {
+  padding: 40px;
+  background: #419be0;
+}
